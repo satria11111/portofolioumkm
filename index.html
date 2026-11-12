@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PurpleDrop - Minuman Segar Kekinian</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-purple" href="#">Purple<span>Drop</span>.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a href="https://wa.me/6285765816827" class="btn btn-purple text-white px-4 rounded-pill" target="_blank">Pesan Sekarang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <span class="badge bg-purple-soft text-purple mb-3 px-3 py-2 rounded-pill fw-semibold">✨ Minuman Segar & Kekinian</span>
+            <h1 class="display-4 fw-bold mb-3">Segarkan Harimu dengan <span class="text-purple">PurpleDrop!</span></h1>
+            <p class="text-muted mb-4 lead">Nikmati sensasi kelezatan minuman segar berkualitas tinggi dengan berbagai varian rasa spesial yang siap menemani harimu.</p>
+            <div class="d-flex gap-3">
+              <a href="#menu" class="btn btn-purple text-white btn-lg px-4 rounded-pill">Lihat Menu</a>
+              <a href="https://wa.me/6285765816827" class="btn btn-outline-purple btn-lg px-4 rounded-pill" target="_blank">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="hero-box mx-auto shadow-lg rounded-4 overflow-hidden bg-purple-soft d-flex align-items-center justify-content: center;">
+              <!-- Ganti src dengan gambar minuman Anda -->
+              <img
+                src="logo1.png"
+                alt="PurpleDrop Drinks"
+                class="img-fluid w-100 h-100 object-fit-cover"
+                onerror="
+                  this.style.display = 'none';
+                  this.parentElement.innerHTML = '<h4 class=\'text-purple fw-bold\'>🥤 Foto Minuman Anda</h4>';
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="text-purple fw-semibold text-uppercase tracking-wide">Pilihan Menu</span>
+          <h2 class="fw-bold">Menu Favorit <span>Kami</span></h2>
+          <p class="text-muted">Pilih varian rasa favoritmu dan rasakan kesegarannya.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Menu 1 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden menu-card">
+              <div class="menu-img-wrap bg-purple-soft">
+                <img
+                  src="taro.jpg"
+                  alt="Taro Boba"
+                  class="card-img-top object-fit-cover"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.innerText = 'Taro Boba Image';
+                  "
+                />
+              </div>
+              <div class="card-body p-4">
+                <span class="badge bg-purple-soft text-purple mb-2">Best Seller</span>
+                <h4 class="fw-bold mb-2">Taro Creamy Boba</h4>
+                <p class="text-muted small mb-3">Perpaduan rasa taro manis gurih dengan topping boba kenyal yang nagih.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-purple fs-5">Rp 15.000</span>
+                  <a href="https://wa.me/6285765816827?text=Halo,%20saya%20mau%20pesan%20Taro%20Creamy%20Boba" class="btn btn-sm btn-outline-purple rounded-pill px-3" target="_blank">Pesan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Menu 2 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden menu-card">
+              <div class="menu-img-wrap bg-purple-soft">
+                <img
+                  src="bery.avif"
+                  alt="Berry Splash"
+                  class="card-img-top object-fit-cover"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.innerText = 'Berry Splash Image';
+                  "
+                />
+              </div>
+              <div class="card-body p-4">
+                <span class="badge bg-purple-soft text-purple mb-2">Refreshing</span>
+                <h4 class="fw-bold mb-2">Berry Splash Soda</h4>
+                <p class="text-muted small mb-3">Minuman soda segar dengan ekstrak buah berry asli yang melegakan tenggorokan.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-purple fs-5">Rp 13.000</span>
+                  <a href="https://wa.me/6285765816827?text=Halo,%20saya%20mau%20pesan%20Berry%20Splash%20Soda" class="btn btn-sm btn-outline-purple rounded-pill px-3" target="_blank">Pesan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Menu 3 -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm rounded-4 h-100 overflow-hidden menu-card">
+              <div class="menu-img-wrap bg-purple-soft">
+                <img
+                  src="creamy.jpg"
+                  alt="Purple Matcha"
+                  class="card-img-top object-fit-cover"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.innerText = 'Purple Matcha Image';
+                  "
+                />
+              </div>
+              <div class="card-body p-4">
+                <span class="badge bg-purple-soft text-purple mb-2">Special</span>
+                <h4 class="fw-bold mb-2">Creamy Ube Latte</h4>
+                <p class="text-muted small mb-3">Kombinasi ube (ubi ungu) asli pilihan dengan susu segar berkualitas premium.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-purple fs-5">Rp 18.000</span>
+                  <a href="https://wa.me/6285765816827?text=Halo,%20saya%20mau%20pesan%20Creamy%20Ube%20Latte" class="btn btn-sm btn-outline-purple rounded-pill px-3" target="_blank">Pesan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="rounded-4 overflow-hidden shadow-sm bg-purple-soft p-2">
+              <img src="tentang.jpeg" alt="Tentang Kami" class="img-fluid rounded-4 w-100" onerror="this.style.display = 'none'" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="text-purple fw-semibold text-uppercase tracking-wide">Tentang Kami</span>
+            <h2 class="fw-bold mb-3">Kualitas Terbaik di Setiap Tegukan</h2>
+            <p class="text-muted mb-4">PurpleDrop hadir sejak tahun 2024 dengan komitmen memberikan sajian minuman kekinian yang higienis, lezat, dan terbuat dari bahan-bahan pilihan berkualitas tinggi tanpa pemanis buatan berbahaya.</p>
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <div class="p-3 border rounded-3 bg-white">
+                  <h4 class="text-purple fw-bold mb-1">100%</h4>
+                  <p class="text-muted mb-0 small">Bahan Alami Pilihan</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 border rounded-3 bg-white">
+                  <h4 class="text-purple fw-bold mb-1">5000+</h4>
+                  <p class="text-muted mb-0 small">Pelanggan Puas</p>
+                </div>
+              </div>
+            </div>
+            <a href="https://wa.me/6285765816827" class="btn btn-purple text-white rounded-pill px-4" target="_blank">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="py-5 bg-purple-soft text-center">
+      <div class="container py-4">
+        <h2 class="fw-bold mb-3 text-purple">Tertarik Mencoba?</h2>
+        <p class="text-muted mb-4">Yuk pesan sekarang juga lewat WhatsApp atau kunjungi outlet terdekat kami!</p>
+        <a href="https://wa.me/6285765816827" class="btn btn-purple text-white btn-lg rounded-pill px-5 shadow mb-4" target="_blank">💬 Chat WhatsApp (085765816827)</a>
+      </div>
+    </section>
+
+    <footer class="bg-white py-4 border-top text-center">
+      <div class="container">
+        <h5 class="fw-bold text-purple mb-1">PurpleDrop.</h5>
+        <p class="text-muted small mb-0">&copy; 2026 PurpleDrop UMKM. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

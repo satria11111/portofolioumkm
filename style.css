@@ -1,0 +1,86 @@
+:root {
+  --primary-purple: #6f42c1;
+  --primary-purple-hover: #5a32a3;
+  --light-purple: #f3eefc;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+  padding-top: 70px;
+}
+
+/* Warna dan Background Kustom Tema Ungu */
+.text-purple {
+  color: var(--primary-purple) !important;
+}
+
+.bg-purple {
+  background-color: var(--primary-purple) !important;
+}
+
+.bg-purple-soft {
+  background-color: var(--light-purple) !important;
+}
+
+.btn-purple {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+  transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: var(--primary-purple-hover);
+  border-color: var(--primary-purple-hover);
+  color: white;
+}
+
+.btn-outline-purple {
+  color: var(--primary-purple);
+  border-color: var(--primary-purple);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--primary-purple);
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: calc(100vh - 70px);
+  padding: 60px 0;
+}
+
+.hero-box {
+  width: 100%;
+  max-width: 380px;
+  height: 380px;
+}
+
+/* Menu Card */
+.menu-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.15) !important;
+}
+
+.menu-img-wrap {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
